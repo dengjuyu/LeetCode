@@ -1,0 +1,8 @@
+# Python 가상 환경 무시
+.venv/
+
+# PyCharm 설정 파일 무시
+.idea/
+*.iml
+__pycache__/
+.DS_Store
