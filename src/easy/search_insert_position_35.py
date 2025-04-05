@@ -1,7 +1,10 @@
 def search_insert(nums, target):
-    min_value = nums[0]
     for i in range(len(nums)):
-        if nums[i] == target:
+        if nums[i] >= target:
             return i
-        else:
-            return -1
+    return len(nums)
+
+if __name__ == '__main__':
+    nums = [1, 3, 5, 6]
+    target = 5
+    print(search_insert(nums, target))
